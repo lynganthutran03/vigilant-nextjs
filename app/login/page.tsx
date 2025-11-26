@@ -67,9 +67,16 @@ const LoginPage = () => {
                         placeholder="Mật khẩu"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        required/>
+                        required
+                    />
+                    <button type="submit" disabled={isLoading}>
+                        {isLoading ? 'Đang xử lý...' : 'Đăng Nhập'}
+                    </button>
                 </form>
+                {error && <p className='error-msg'>{error}</p>}
             </div>
         </div>
-    )
+    );
 }
+
+export default LoginPage;
