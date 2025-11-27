@@ -15,7 +15,7 @@ export default function GuardLayout({ children }: { children: React.ReactNode })
         if (!isLoading) {
             if (!user) {
                 router.push('/login');
-            } else if (user.role !== 'GUARD') {
+            } else if (user.role !== 'MANAGER') {
                 router.push('/login');
             }
         }
