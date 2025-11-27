@@ -141,11 +141,6 @@ const Sidebar = ({ user }: SidebarProps) => {
     return (
         <div className="sidebar">
             <h2>EIU - Vigilant</h2>
-            {user.identityNumber && (
-                <p style={{fontSize: '12px', textAlign: 'center', opacity: 0.7, marginBottom: '20px'}}>
-                    ID: {user.identityNumber}
-                </p>
-            )}
             <ul>
                 {renderNavLinks()}
             </ul>

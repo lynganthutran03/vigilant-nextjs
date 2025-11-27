@@ -1,0 +1,92 @@
+.fc {
+    font-size: 0.85rem !important;
+}
+
+.fc-event {
+    font-weight: 500;
+    font-size: 0.8rem !important;
+    margin-top: 1px !important;
+    padding: 1px 4px !important;
+    border-radius: 4px !important;
+    border: none !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.fc-event:hover {
+    opacity: 0.8;
+}
+
+.fc .fc-daygrid-day-frame {
+    padding: 8px;
+    min-height: 80px !important;
+}
+
+.fc .fc-daygrid-day-number {
+    text-decoration: none !important;
+    color: #1976d2;
+    font-weight: 500;
+}
+
+.fc .fc-day-today {
+    background-color: #fff7e6 !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+    text-decoration: none !important;
+    padding: 5px 0 !important;
+    font-weight: 600;
+    font-size: 0.9rem !important;
+    color: #0d47a1;
+    font-size: 14px;
+}
+
+.fc-tooltip {
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    pointer-events: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 1.2rem !important;
+    font-weight: 700;
+    color: #374151;
+}
+
+.fc .fc-button {
+    padding: 4px 10px !important;
+    font-size: 0.85rem !important;
+    height: auto !important;
+}
+
+.fc .fc-button-primary {
+    background-color: #fff !important;
+    color: #374151 !important;
+    border: 1px solid #d1d5db !important;
+    font-weight: 500;
+    text-transform: capitalize;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+}
+
+.fc .fc-button-primary:hover {
+    background-color: #f9fafb !important;
+    border-color: #9ca3af !important;
+}
+
+.fc .fc-button-primary:focus {
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2) !important;
+}
+
+.fc .fc-button-active {
+    background-color: #eff6ff !important;
+    color: #2563eb !important;
+    border-color: #2563eb !important;
+}

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import { useAuth } from '@/context/AuthContext';
 import { AuthUser } from '@/types';
 import './Login.css';
 
@@ -12,6 +13,7 @@ const LoginPage = () => {
     const [error, setError] = useState<string>('');
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const router = useRouter();
+    const { setUser } = useAuth();
 
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -29,6 +31,8 @@ const LoginPage = () => {
 
             const res = await axios.get<AuthUser>("/api/userinfo");
             const userData = res.data;
+
+            setUser(userData);
 
             if (userData.role === 'GUARD') {
                 router.push('/guard');

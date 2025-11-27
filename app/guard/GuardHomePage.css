@@ -1,0 +1,86 @@
+.guard-home-page {
+    padding: 5px 23px;
+    margin: 0 auto;
+    max-width: 1600px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    min-height: calc(100vh - 55px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.guard-home-page h3 {
+    margin-bottom: 10px;
+    color: #111827;
+    font-weight: 700;
+}
+
+.guard-home-page p {
+    color: #6b7280;
+    margin-top: 0;
+    font-size: 0.95rem;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.calendar-box,
+.charts-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid #e5e7eb;
+}
+
+.calendar-box {
+    flex: 2;
+    min-width: 500px;
+}
+
+.charts-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: none;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border: 1px solid #e5e7eb;
+}
+
+.card canvas {
+    margin: 0 auto;
+    display: block;
+}
+
+.card h4,
+.calendar-box h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #374151;
+    font-weight: 600;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 10px;
+}
+
+
+.chart-tall {
+    height: 250px;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+}
